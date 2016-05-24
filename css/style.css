@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
+
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+header
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f3f4+0,d1d4d6+100 */
+	background: rgb(242,243,244); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgb(242,243,244) 0%, rgb(209,212,214) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(242,243,244) 0%,rgb(209,212,214) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(242,243,244) 0%,rgb(209,212,214) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f3f4', endColorstr='#d1d4d6',GradientType=0 ); /* IE6-9 */
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+header > div.wrapper
+{
+	padding: 15px 0;
+}
+
+#nav_bar nav
+{
+	border-left: 1px solid rgb(210,210,210);
+}
+
+.clearfix:after
+{
+	content: ".";
+	display:block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+#main_page_title
+{
+	font: bold 2.25em/2em "Montserrat","sans-serif";
+	text-align: center;
+}
+
+.date_time
+{
+	font: italic .75em/1em Georgia, serif;
+}
+
+.col_third_left
+{
+	float: left;
+	width: 32.6%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	clear: left;
+}
+
+.col_third_mid
+{
+	float: left;
+	width: 32.6%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+
+.col_third_right
+{
+	float: right;
+	width: 32.6%;
+	clear: right;
+	margin-bottom: 10px;
+}
+
+.col_half_left
+{
+	float: left;
+	margin: 0 0 10px;
+	width: 49.5%;
+	clear: left;
+}
+
+.col_half_right
+{
+
+	float: right;
+	margin: 0 0 10px;
+	width: 49.5%;
+	clear: right;
+}
+
+.col_all
+{
+	clear: both;
+	margin: 0 0 10px;
+}
+
+#main_content
+{
+	position: relative;
+	margin-top: 138px;
+}
+
+nav a
+{
+	font-family: "Expletus Sans", cursive;
+	border-right: 1px solid rgb(210,210,210);
+	color: white;
+	font-size: 1.1em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 20%;
+	padding: 7px 0;
+	/*border-radius: 10px 10px 0 0;*/
+}
+
+nav a:hover
+{
+	background-color: #606060;
+}
+
+#pics_right
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	background: url(../images/church_collage.jpg), repeat-y;
+}
+
+#pics_left
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	background: url(../images/church_collage.jpg), repeat-y;
+}
+
+#logo
+{
+	position: relative;
+	left: -31px;
+}
+
+#logo img
+{
+	vertical-align: middle;
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-family: "Montserrat","sans-serif";
+	color: black;
+	font-size: 1.25em;
+	text-decoration: none;
+	text-shadow: 1px 1px 5px #888;
+	margin-left: 2px;
+}
+
+.wrapper
+{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.inner_wrapper
+{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#nav_bar
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+	background: rgb(69,72,77); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#bg_texture
+{
+	background-image: url(../images/lightly-textured-background-tile.jpg);
+	background-position: left top;
+	background-repeat: repeat;
+}
+
+#transparency
+{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,8ba4af+100&amp;0.2+0,1+54 */
+	background: -moz-linear-gradient(top,  rgba(206,220,231,0.15) 0%, rgba(206,220,231,0.5) 50%, rgba(206,220,231,1) 75%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(206,220,231,0.15) 0%, rgba(206,220,231,0.5) 50%, rgba(206,220,231,1) 75%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(206,220,231,0.15) 0%, rgba(206,220,231,0.5) 50%, rgba(206,220,231,1) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33cedce7', endColorstr='#33cedce7',GradientType=0 ); /* IE6-9 */
+}
+
+#front_matter
+{
+	background-color: rgba(255,255,255,1);
+	padding: 0 10px 15px;
+}
+
+footer
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+	background: rgb(69,72,77); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	border-bottom-right-radius:10px; 
+	border-bottom-left-radius:10px;
+	padding: 5px 10px 15px;
+}
+
+#social_links, #author, address
+{
+	display: inline-block;
+	padding: 2px;
+	color: rgb(180,180,180);
+	font-family: "Expletus Sans", cursive;
+	font-size: .75em;
+	font-style: normal;
+}
+
+address
+{
+	text-align: right;
+}
+
+#social_links
+{
+	text-align: left;
+}
+
+#author
+{
+	text-align: center;
+}
+
+figure > img
+{
+	width: 100px;
+	height: 100px;
+}
+
+section
+{
+	border: 1px solid rgb(207,220,232);
+	padding: 5px 10px;
+	box-shadow: 2px 1px 3px 1px rgb(180,180,180);
+}
+
+.fbook, .twitt
+{
+	background: url(../images/social-icons.png) no-repeat;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+
+
+.fbook
+{
+	background-position: 0 0;
+}
+
+.fbook:hover
+{
+	background-position: -40px 0;
+}
+
+.fbook:active
+{
+	background-position: -80px 0;
+}
+
+.twitt
+{
+	background-position: 0 -40px;
+}
+
+.twitt:hover
+{
+	background-position: -40px -40px;
+}
+
+.twitt:active
+{
+	background-position: -80px -40px
+}
