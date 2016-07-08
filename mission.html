@@ -2,40 +2,67 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="mission, statement, church, love, power, grace, amor, poder, gracia, LPG, APG, christian, christianity, christ, bronx, ny, new york, boston road, boston rd, evangelical, evangelicalism, pentecostal, IDDPMI">
+		<meta name="keywords" content="church, love, power, grace, amor, poder, gracia, LPG, APG, christian, christianity, christ, bronx, ny, new york, boston road, boston rd, evangelical, evangelicalism, pentecostal, IDDPMI">
 		<meta name="description" content="We are a community church in the heart of the South Bronx, serving our neighborhood for over 50 years.">
-		<title>Our Mission</title>
+		<title>Love, Power and Grace: Our Mission</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]!>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+		<![endif]-->
 	</head>
 	<body>
-		<header>
-			<div id="logo">
-				<a href="index.html"><h1>Love, Power and Grace Church</h1></a>
+		<div id="bg_texture">
+			<div id="transparency">
+				<header>
+					<div class="wrapper">
+						<a id="logo" href="index.html"><img src="images/iddpmi_transparent.png" alt="IDDPMI Logo" height="70" width="70"><h1>Love, Power and Grace Church</h1></a>
+					</div>
+					<div id="nav_bar">
+						<div class="wrapper">
+							<nav class="inner_wrapper">
+								<a class="border_right" href="history.html" target="_blank">About Us</a><a class="border_right" href="mission.html" target="_blank">Services</a><a class="border_right" href="services.html" target="_blank">Ministries</a><a class="border_right" href="beliefs.html" target="_blank">Media</a><a href="directions.html" target="_blank">Contact Us</a>
+							</nav>
+						</div>
+					</div>
+				</header>
+				<main id="main_content" class="wrapper">
+					<div id="pics_left"></div>
+					<div id="pics_right"></div>
+					<div id="front_matter" class="inner_wrapper clearfix">
+						<section>
+						<h1>Our Mission</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</section>
+					</div>
+					<script type="text/javascript">
+						var divHeight = document.getElementById("front_matter").offsetHeight;
+						var cssHeight = divHeight + "px";
+						document.getElementById("pics_right").style.height=cssHeight;
+						document.getElementById("pics_left").style.height=cssHeight;
+					</script>
+				</main>
+				<footer class="wrapper clearfix">
+					<div class="inner_wrapper">
+						<address class="col_third_right">
+							Love, Power and Grace Church<br>
+							1455 Boston Road<br>
+							Bronx, NY 10460
+						</address>
+						<div id="social_links" class="col_third_left">
+							<p>Follow Us:</p>
+								<a class="fbook" href="https://www.facebook.com/lpg.church" target="_blank" title="Facebook">Facebook</a><a class="twitt" href="https://twitter.com/Lpgchurch" target="_blank" title="Twitter">Twitter</a>
+						</div>
+						<div id="author"class="col_third_mid">
+							<p>Designed by Efrain Perez Jr</p>
+						</div>
+					</div>
+				</footer>
 			</div>
-			<div id="nav_bar">
-				<nav>
-					<a href="mission.html" target="_blank">Our Mission</a>
-					<a href="services.html" target="_blank">Service Schedule</a>
-					<a href="beliefs.html" target="_blank">Our Beliefs</a>
-					<a href="directions.html" target="_blank">Directions</a>
-					<a href="contact.html" target="_blank">Contact Us</a>
-				</nav>
-			</div>
-		</header>
-		<section>
-			<h1>Our Mission</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-		</section>
-		<footer>
-			<span>|<b>Love Power and Grace Church:</b> 1455 Boston Road
-			Bronx, NY 10462</span>
-			<span>|(646) 339-4360|</span>
-		</footer>
+		</div>
 	</body>
 </html>
