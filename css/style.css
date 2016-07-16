@@ -3,39 +3,39 @@
 @font-face
 {
   font-family: "Open Sans";
-  src: url(fonts/open-sans/OpenSans-Regular.ttf);
+  src: url(fonts/open_sans/opensans_regular.ttf);
 }
 
 @font-face
 {
   font-family: "Open Sans";
-  src: url(fonts/open-sans/OpenSans-SemiBold.ttf);
+  src: url(fonts/open_sans/opensans_semibold.ttf);
   font-weight: bold;
 }
 
 @font-face
 {
 	font-family: "Montserrat";
-	src: url(fonts/montserrat/Montserrat-Regular.otf);
+	src: url(fonts/montserrat/montserrat_regular.otf);
 }
 
 @font-face
 {
 	font-family: "Montserrat";
-	src: url(fonts/montserrat/Montserrat-SemiBold.otf);
+	src: url(fonts/montserrat/montserrat_semibold.otf);
 	font-weight: bold;
 }
 
 @font-face
 {
 	font-family: "Open Sans Condensed";
-	src: url(fonts/open-sans-condensed/OpenSans-CondLight.ttf);
+	src: url(fonts/open_sans_condensed/opensans_condlight.ttf);
 }
 
 @font-face
 {
 	font-family: "Expletus Sans";
-	src: url(fonts/expletus-sans/ExpletusSans-Regular.ttf);
+	src: url(fonts/expletus_sans/expletussans_regular.ttf);
 }
 
 /* Universal Style Overrides */
