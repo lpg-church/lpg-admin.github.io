@@ -53,7 +53,7 @@ header > .wrapper
 	padding: 15px 0;
 }
 
-#nav_bar nav
+#nav-bar nav
 {
 	border-left: 1px solid rgb(210,210,210);
 }
@@ -73,23 +73,24 @@ ul
 	list-style-type: none;
 }
 
-.main_title
+.main-title
 {
 	font: bold 2.25em/2em "Montserrat", sans-serif;
 	text-align: center;
+	margin-bottom: 10px
 }
 
-.date_time
+.date-time
 {
 	font: italic .8em/1.5em Georgia, serif;
 }
 
-.spec_msg
+.spec-msg
 {
 	font: normal 1.2em/1em "Open Sans Condensed", sans-serif;
 }
 
-.col_third_left
+.col-third-left
 {
 	float: left;
 	width: 32.6%;
@@ -98,7 +99,7 @@ ul
 	clear: left;
 }
 
-.col_third_mid
+.col-third-mid
 {
 	float: left;
 	width: 32.6%;
@@ -106,7 +107,7 @@ ul
 	margin-bottom: 10px;
 }
 
-.col_third_right
+.col-third-right
 {
 	float: right;
 	width: 32.6%;
@@ -114,7 +115,7 @@ ul
 	margin-bottom: 10px;
 }
 
-.col_half_left
+.col-half-left
 {
 	float: left;
 	margin: 0 0 10px;
@@ -122,7 +123,7 @@ ul
 	clear: left;
 }
 
-.col_half_right
+.col-half-right
 {
 	float: right;
 	margin: 0 0 10px;
@@ -130,14 +131,42 @@ ul
 	clear: right;
 }
 
-.col_all
+.col-all
 {
 	clear: both;
 	margin: 0 0 10px;
 }
-#bg_texture
+#bg-texture
 {
 	margin-top: 138px;
+}
+
+#border-left
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
+	background: rgb(0,0,0); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(69,72,77,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#border-right
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
+	background: rgb(0,0,0); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(0,0,0,1) 0%, rgba(69,72,77,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 main
@@ -145,27 +174,27 @@ main
 	position: relative;
 }
 
-.drop_menu
+.drop-menu
 {
 	position: relative;
 	display: inline-block;
 	width: 20%
 }
 
-.drop_content
+.drop-content
 {
 	display: none;
 	position: absolute;
 	z-index: 1;
 	width: 100%;
 }
-.drop_menu .drop_content > a
+.drop-menu .drop-content > a
 {
 	border-top: 1px solid rgb(210,210,210);
 	font-size: 0.9em;
 }
 
-.drop_menu a
+.drop-menu a, .drop-menu .empty-nav
 {
 	display: block;
 	border-right: 1px solid rgb(210,210,210);
@@ -178,7 +207,7 @@ main
 	padding: 7px 0;
 }
 
-.drop_menu a[href="#"]:hover
+.drop-menu .empty-nav:hover
 {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
 	background: rgb(69,72,77); /* Old browsers */
@@ -189,7 +218,7 @@ main
 	cursor: default;
 }
 
-.drop_menu:hover .drop_content
+.drop-menu:hover .drop-content
 {
 	display: block;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
@@ -201,17 +230,17 @@ main
 	box-shadow: 2px 1px 3px 1px rgba(100,100,100,.5);
 }
 
-.drop_menu a:hover
+.drop-menu a:hover
 {
 	background-color: #606060;
 }
 
-.event_title
+.event-title
 {
 	font-weight: bold;
 }
 
-.sermon_profile_left img
+.sermon-profile-left img
 {
 	width: 188px;
 	height: 125px;
@@ -219,13 +248,13 @@ main
 	margin-right: 10px;
 }
 
-.sermon_profile_left audio
+.sermon-profile-left audio
 {
 	float: inherit;
 	clear: both;
 }
 
-.sermon_profile_right img
+.sermon-profile-right img
 {
 	width: 188px;
 	height: 125px;
@@ -233,44 +262,26 @@ main
 	margin-left: 10px;
 }
 
-.sermon_profile_right audio
+.sermon-profile-right audio
 {
 	float: inherit;
 	clear: both;
 }
 
-.sermon_profile_right p
+.sermon-profile-right p
 {
 	text-align: right;
 }
 
-.sermon_profile_left p
+.sermon-profile-left p
 {
 	text-align: left;
-}
-
-#pics_right
-{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100px;
-	background: url(../images/church_collage.jpg), repeat-y;
-}
-
-#pics_left
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100px;
-	background: url(../images/church_collage.jpg), repeat-y;
 }
 
 #logo
 {
 	position: relative;
-	left: -31px;
+	left: -63px;
 }
 
 #logo img
@@ -291,17 +302,17 @@ main
 
 .wrapper
 {
-	width: 1000px;
+	width: 820px;
 	margin: 0 auto;
 }
 
-.inner_wrapper
+.inner-wrapper
 {
 	width: 800px;
 	margin: 0 auto;
 }
 
-#nav_bar
+#nav-bar
 {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
 	background: rgb(69,72,77); /* Old browsers */
@@ -311,7 +322,7 @@ main
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-#bg_texture
+#bg-texture
 {
 	background-image: url(../images/lightly-textured-background-tile.jpg);
 	background-position: left top;
@@ -327,7 +338,7 @@ main
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26e4e7e9', endColorstr='#e4e7e9',GradientType=0 ); /* IE6-9 */
 }
 
-#front_matter
+#front-matter
 {
 	background-color: rgba(255,255,255,1);
 	padding: 0 10px 15px;
@@ -347,7 +358,7 @@ footer
 	padding: 5px 10px 15px;
 }
 
-#social_links p, #author p, address
+#social-links p, #author p, address
 {
 	padding: 2px;
 	color: rgb(180,180,180);
@@ -374,13 +385,13 @@ address
 	text-align: right;
 }
 
-#social_links
+#social-links
 {
 	margin-top: 10px;
 	text-align: left;
 }
 
-#social_links p
+#social-links p
 {
 	text-align: inherit;
 }
@@ -402,11 +413,16 @@ figure > img
 	height: 125px;
 }
 
-section
+section[class|="col"]
 {
 	border: 1px solid rgb(207,220,232);
 	padding: 10px 10px 5px 10px;
 	box-shadow: 2px 1px 3px 1px rgb(180,180,180);
+}
+
+section
+{
+
 }
 
 section h3, article h3
