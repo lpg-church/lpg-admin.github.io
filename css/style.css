@@ -545,11 +545,29 @@ a:visited
 	color: rgb(180,180,180);
 }
 
-a[href="#front-matter"]
+.arrow
 {
 	display: block;
+	margin: 0 auto;
 	font-size: 2em;
-	text-align: center;
+	text-decoration: none;
+	color: black;
+	width: 21px;
+}
+
+.arrow:visited
+{
+	color: black;
+}
+
+.arrow:hover
+{
+	color: #606060;
+}
+
+.arrow:active
+{
+	color: #505050;
 }
 
 .circle
