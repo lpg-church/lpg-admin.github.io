@@ -1,5 +1,6 @@
 /* Font Declarations */
-@import 'https://fonts.googleapis.com/css?family=Expletus+Sans|Montserrat|Open+Sans|Open+Sans+Condensed:300';
+
+@import 'https://fonts.googleapis.com/css?family=Expletus+Sans|Montserrat:400,700|Roboto:300i,400';
 
 /* Universal Style Overrides */
 *
@@ -14,13 +15,14 @@
 
 h1, h2, h3, h4, h5, h6
 {
-	font-family: "Open Sans";
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 	line-height: 1em;
 }
 
 p
 {
-	text-align: center;
+	line-height: 1.2em;
 }
 
 header
@@ -75,19 +77,43 @@ ul
 
 .main-title
 {
-	font: bold 2.25em/2em "Montserrat", sans-serif;
+	font-size: 2.25em;
+	line-height: 1em;
 	text-align: center;
-	margin-bottom: 10px
+	margin-bottom: 30px;
 }
 
-.date-time
+.main-title span
+{
+	font-family: "Roboto", sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: .8em;
+}
+
+.date-time, [class |="cred"]
 {
 	font: italic .8em/1.5em Georgia, serif;
 }
 
+.cred-left
+{
+	width: 100%;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.cred-right
+{
+	width: 100%;
+	text-align: right;
+	margin-bottom: 5px;
+}
+
 .spec-msg
 {
-	font: normal 1.2em/1em "Open Sans Condensed", sans-serif;
+	font: normal 1.2em/1em "Roboto", sans-serif;
+	font-weight: 300;
 }
 
 .col-third-left
@@ -115,10 +141,85 @@ ul
 	margin-bottom: 10px;
 }
 
+.col-two-third-left
+{
+	float: left;
+	width: 66.2%;
+	clear: left;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+
+.col-two-third-right
+{
+	float: right;
+	width: 66.2%;
+	clear: right;
+	margin-bottom: 10px;
+}
+
+.col-80-left
+{
+	float: left;
+	width: 79.5%;
+	clear: left;
+	margin-bottom: 10px;
+}
+
+.col-80-right
+{
+	float: right;
+	width: 79.5%;
+	clear: right;
+	margin-bottom: 10px;
+}
+
+.col-fifth-left
+{
+	float: left;
+	clear: left;
+	width: 19.2%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+
+.col-fifth-mid
+{
+	float: left;
+	width: 19.2%;
+	margin-right: 1%;
+	margin-bottom: 10px;
+}
+
+.col-fifth-right
+{
+	float: right;
+	clear: right;
+	width: 19.2%;
+	margin-bottom: 10px;
+}
+
+.col-20-left
+{
+	float: left;
+	width: 19.5%;
+	clear: left;
+	margin-bottom: 10px;
+}
+
+.col-20-right
+{
+	float: right;
+	width: 19.5%;
+	clear: right;
+	margin-bottom: 10px;
+
+}
+
 .col-half-left
 {
 	float: left;
-	margin: 0 0 10px;
+	margin-bottom: 10px;
 	width: 49.5%;
 	clear: left;
 }
@@ -126,7 +227,7 @@ ul
 .col-half-right
 {
 	float: right;
-	margin: 0 0 10px;
+	margin-bottom: 10px;
 	width: 49.5%;
 	clear: right;
 }
@@ -134,8 +235,9 @@ ul
 .col-all
 {
 	clear: both;
-	margin: 0 0 10px;
+	margin-bottom: 10px;
 }
+
 #bg-texture
 {
 	margin-top: 138px;
@@ -207,6 +309,11 @@ main
 	padding: 7px 0;
 }
 
+.drop-menu a:visited, .mini-nav a:visited
+{
+	color: white;
+}
+
 .drop-menu .empty-nav:hover
 {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
@@ -235,47 +342,37 @@ main
 	background-color: #606060;
 }
 
+.drop-menu a:active
+{
+	background-color: #505050;
+}
+
 .event-title
 {
 	font-weight: bold;
 }
 
-.sermon-profile-left img
-{
-	width: 188px;
-	height: 125px;
-	float: inherit;
-	margin-right: 10px;
-}
-
-.sermon-profile-left audio
-{
-	float: inherit;
-	clear: both;
-}
-
 .sermon-profile-right img
 {
-	width: 188px;
-	height: 125px;
-	float: inherit;
 	margin-left: 10px;
 }
 
-.sermon-profile-right audio
+.sermon-profile-left img
+{
+	margin-right: 10px;
+}
+
+[class*="sermon-profile"] img
+{
+	width: 188px;
+	height: 125px;
+	float: inherit;
+}
+
+[class*="sermon-profile"] audio
 {
 	float: inherit;
 	clear: both;
-}
-
-.sermon-profile-right p
-{
-	text-align: right;
-}
-
-.sermon-profile-left p
-{
-	text-align: left;
 }
 
 #logo
@@ -287,12 +384,13 @@ main
 #logo img
 {
 	vertical-align: middle;
+	height: 70px;
+	width: 70px;
 }
 
 #logo h1
 {
 	display: inline-block;
-	font-family: "Montserrat", sans-serif;
 	color: black;
 	font-size: 1.25em;
 	text-decoration: none;
@@ -341,8 +439,71 @@ main
 #front-matter
 {
 	background-color: rgba(255,255,255,1);
-	padding: 0 10px 15px;
-	min-height: 500px
+	padding: 35px 10px 15px;
+	min-height: 600px;
+	position: relative;
+}
+
+.mini-nav
+{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+	background: rgb(181,189,200); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+	border-radius: 6px;
+}
+
+.mini-nav div, .mini-nav a
+{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-family: "Roboto", cursive;
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+	padding: 3px 0;
+
+}
+.mini-nav .mini-nav-drop
+{
+	padding: 0;
+}
+
+.mini-nav .mini-nav-drop .mini-nav-drop-content
+{
+	display: none;
+	padding: 0;
+	font-size: 0.75em;
+}
+
+.mini-nav .mini-nav-drop:hover .mini-nav-drop-content
+{
+	display: block;
+}
+
+.mini-nav div
+{
+	font-size: 1em;
+	cursor: default;
+}
+
+.mini-nav a
+{
+	border-top: 1px solid rgb(210,210,210);
+	font-size: 0.8em;
+}
+
+.mini-nav a:hover
+{
+	background-color: #8B9199;
+}
+
+.mini-nav a:active
+{
+	background-color: #5C6066;
 }
 
 footer
@@ -370,7 +531,12 @@ footer
 a
 {
 	font-family: inherit;
-	color: inherit;
+	color: blue;
+}
+
+a:visited
+{
+	color: purple;
 }
 
 #author a
@@ -379,50 +545,79 @@ a
 	color: rgb(180,180,180);
 }
 
+a[href="#front-matter"]
+{
+	display: block;
+	font-size: 2em;
+	text-align: center;
+}
+
+.circle
+{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.circle p
+{
+	color: white;
+	font-size: 1.2em;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.circle + p
+{
+	display: inline-block;
+}
+
+.txt-align-right
+{
+	text-align: right;
+}
+
+.txt-align-center
+{
+	text-align: center;
+}
+
 address
 {
 	margin-top: 10px;
-	text-align: right;
 }
 
 #social-links
 {
 	margin-top: 10px;
-	text-align: left;
-}
-
-#social-links p
-{
-	text-align: inherit;
 }
 
 #author
 {
 	margin-top: 10px;
-	text-align: center;
 }
 
-section ul, article ul
-{
-	text-align: center;
-}
-
-figure > img
+[id|="home-page"] figure > img
 {
 	width: 188px;
 	height: 125px;
 }
 
-section[class|="col"]
+.card-style
 {
 	border: 1px solid rgb(207,220,232);
-	padding: 10px 10px 5px 10px;
 	box-shadow: 2px 1px 3px 1px rgb(180,180,180);
 }
 
-section
+section, article
 {
-
+	padding: 10px 10px 5px;
 }
 
 section h3, article h3
@@ -435,6 +630,55 @@ section h3, article h3
 article
 {
 	margin-bottom: 10px;
+}
+
+.personal-profile
+{
+	padding-top: 0;
+}
+
+.personal-profile p
+{
+	text-indent: 30px;
+}
+
+.personal-profile img
+{
+	float: left;
+	width: 150px;
+	height: 210px;
+	margin-right: 15px;
+}
+
+.big-letter
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 5em;
+	color: rgb(225,14,0);
+	text-shadow: 1px 1px 5px #888;
+	margin-right: 10px;
+	float: left;
+	height: 58px;
+	line-height: .8;
+}
+
+.personal-profile img + span + p
+{
+	text-indent: 0;
+}
+
+#mission
+{
+	padding-top: 0;
+}
+
+#mission img
+{
+	width: 498px;
+	height: 280px;
+	display: block;
+	margin: 0 auto 15px;
 }
 
 .fbook, .twitt
@@ -465,15 +709,15 @@ article
 
 .twitt
 {
-	background-position: 0 -40px;
+	background-position: 0 -41px;
 }
 
 .twitt:hover
 {
-	background-position: -40px -40px;
+	background-position: -40px -41px;
 }
 
 .twitt:active
 {
-	background-position: -80px -40px
+	background-position: -80px -41px;
 }
