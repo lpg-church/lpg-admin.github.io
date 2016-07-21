@@ -438,25 +438,24 @@ main
 
 .roll-over-transparency
 {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(200,200,200,0);
+	background-color: rgba(200,200,200,.4);
+	z-index: 1;
+	display: none;
 }
 
 .roll-over-transparency > h3
 {
-	display: none;
+	color: rgba(0,0,0,.8);
 }
 
-.roll-over-transparency:hover
-{
-	background-color: rgba(200,200,200,.4);
-}
-
-.roll-over-transparency:hover > h3
+.pastor-landing-section:hover .roll-over-transparency
 {
 	display: block;
-	color: rgba(0,0,0,.5);
 }
 
 .zero-padding
@@ -464,11 +463,16 @@ main
 	padding: 0;
 }
 
+.pastor-landing-section
+{
+	position: relative;
+	height: 315px;
+}
+
 .pastor-landing-section img
 {
-	width: 306px;
-	height: 230px;
-	z-index: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #front-matter
@@ -686,19 +690,14 @@ bounds of the parent) it's advisable to set width with percentage as well.
 	-webkit-transform: translateX(-50%);
 }
 
-address
+address, #social-links, #author
 {
 	margin-top: 10px;
 }
 
-#social-links
+address a
 {
-	margin-top: 10px;
-}
-
-#author
-{
-	margin-top: 10px;
+	color: inherit;
 }
 
 [id|="home-page"] figure > img
@@ -718,7 +717,7 @@ section, article
 	padding: 10px 10px 5px;
 }
 
-section h3, article h3
+section > h3, article > h3
 {
 	margin-bottom: 15px;
 	font-size: 1.25em;
@@ -777,6 +776,11 @@ article
 	height: 280px;
 	display: block;
 	margin: 0 auto 15px;
+}
+
+iframe
+{
+	border: 0;
 }
 
 .fbook, .twitt
