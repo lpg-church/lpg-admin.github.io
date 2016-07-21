@@ -37,7 +37,7 @@ header
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 999;
 }
 
 li
@@ -436,6 +436,41 @@ main
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26e4e7e9', endColorstr='#e4e7e9',GradientType=0 ); /* IE6-9 */
 }
 
+.roll-over-transparency
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(200,200,200,0);
+}
+
+.roll-over-transparency > h3
+{
+	display: none;
+}
+
+.roll-over-transparency:hover
+{
+	background-color: rgba(200,200,200,.4);
+}
+
+.roll-over-transparency:hover > h3
+{
+	display: block;
+	color: rgba(0,0,0,.5);
+}
+
+.zero-padding
+{
+	padding: 0;
+}
+
+.pastor-landing-section img
+{
+	width: 306px;
+	height: 230px;
+	z-index: 0;
+}
+
 #front-matter
 {
 	background-color: rgba(255,255,255,1);
@@ -584,11 +619,6 @@ a:visited
 {
 	color: white;
 	font-size: 1.2em;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
 }
 
 .circle + p
@@ -604,6 +634,56 @@ a:visited
 .txt-align-center
 {
 	text-align: center;
+}
+
+/*
+Two versions of Veritcal and Horizontal Alignment class.
+One uses absolute positioning, the other relative.
+The absolutely positioned one is needed in instances when aligning
+an element within a parent that has other statically positioned
+siblings, since absolute positioning will allow percent values to position
+"through" static siblings, but relative won't.  When the aligned element
+is alone in it's containing parent (i.e. has no siblings), you can use the 
+relative positioning method. Remember when positioning with percentage 
+(of containing element), width of element can be fluid (i.e. Text wrapping
+to next line, since element will attempt to keep it's content within the 
+bounds of the parent) it's advisable to set width with percentage as well. 
+*/
+
+.vert-align-center-rel
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.vert-align-center-abs
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.horz-align-center-rel
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+
+.horz-align-center-abs
+{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 }
 
 address
