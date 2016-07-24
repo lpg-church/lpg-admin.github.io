@@ -91,23 +91,20 @@ ul
 	font-size: .8em;
 }
 
-.date-time, [class |="cred"]
+.date-time, .cred
 {
 	font: italic .8em/1.5em Georgia, serif;
 }
 
-.cred-left
+.cred
 {
-	width: 100%;
-	text-align: left;
 	margin-bottom: 5px;
 }
 
-.cred-right
+[id$="vids"] li > figure
 {
-	width: 100%;
-	text-align: right;
-	margin-bottom: 5px;
+	width: 598px;
+	margin: 0 auto;
 }
 
 .spec-msg
@@ -400,13 +397,15 @@ main
 
 .wrapper
 {
-	width: 820px;
+	max-width: 950px;
+	min-width: 820px;
 	margin: 0 auto;
 }
 
 .inner-wrapper
 {
-	width: 800px;
+	max-width: 930px;
+	min-width: 800px;
 	margin: 0 auto;
 }
 
